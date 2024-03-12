@@ -1,5 +1,3 @@
-:: Copyright (c) 2021 Ivan Šincek
-
 @echo off
 setlocal EnableDelayedExpansion
 	echo ################################################################
